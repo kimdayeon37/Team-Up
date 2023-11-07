@@ -24,7 +24,10 @@
 - 기능 명세서 대비 구현 여부 (추가된 기능 또는 삭제된 기능에 대한 설명, 각 개별 기능에 대한 담당자)
 - DB 설계, GA 분석 결과, 부하테스트 결과 등
 
-프로젝트 기간 [2022.10.1~2022.12.15]
+
+<b>프로젝트 기간</b>
+[2022.10.1~2022.12.15]
+
 
 ![image](https://github.com/kimdayeon37/Team-Up/assets/93921784/756e9928-b2ea-44f7-80b8-88e3818fb257)
 ![image](https://github.com/kimdayeon37/Team-Up/assets/93921784/f331d2c3-2074-4fe6-a549-ad52c7bd5148)
