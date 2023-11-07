@@ -1,0 +1,18 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 200px;
+}
+
+.pagination > button {
+  width: 42px;
+  background-color: transparent;
+  color: #a5a5a5;
+  font-size: 20px;
+  padding: 0px;
+}
+
+.pagination > button.now {
+  color: #1f1f1f;
+}

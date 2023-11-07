@@ -1,0 +1,78 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-box {
+  width: 970px;
+  height: 380px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-box > .img_logo {
+  margin-top: 40px;
+  margin-bottom: 28px;
+  width: 182px;
+  height: 26px;
+}
+
+.login-box > .login-center {
+  width: 650px;
+}
+.login-box > .login-center > .login-input {
+  width: 630px;
+  height: 56px;
+  border: 2px solid #dfdfdf;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.login-checkbox {
+  display: flex;
+}
+.login-checkbox > .checkbox-container:first-of-type {
+  margin-right: 27px;
+}
+.login-checkbox
+  > .checkbox-container
+  > input[type="checkbox"]
+  + label
+  + label
+  > a {
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 18px;
+}
+.login-checkbox > .checkbox-container > input[type="checkbox"] + label {
+  cursor: pointer;
+}
+
+.login-box > .login-center > .btn-login {
+  margin-top: 28px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 22px;
+  height: 50px;
+}
+
+.login-finds {
+  margin-top: 60px;
+  margin-bottom: 281px;
+  display: flex;
+  justify-content: space-between;
+  width: 343px;
+  font-size: 20px;
+  color: #a5a5a5;
+}
+.login-finds > .login-find {
+  color: #a5a5a5;
+  cursor: pointer;
+}
+
+.login-finds > .a {
+}

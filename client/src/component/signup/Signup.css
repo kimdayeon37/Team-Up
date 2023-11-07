@@ -1,0 +1,192 @@
+.SUCheckComponent {
+  padding: 20px;
+}
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container > input[type="checkbox"] + label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #a0a0a0;
+  border-radius: 5px;
+}
+
+.checkbox-container > input[type="checkbox"] + label > .checked {
+  display: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.checkbox-container > input[type="checkbox"]:checked + label {
+  background-color: #a0a0a0;
+}
+
+.checkbox-container > input[type="checkbox"]:checked + label > .checked {
+  display: block;
+}
+
+.checkbox-container > input[type="checkbox"] + label + label > a {
+  font-weight: 700;
+  margin-left: 5px;
+  color: #626262;
+  cursor: pointer;
+}
+
+.terms {
+  width: 1092px;
+  height: 180px;
+  background-color: #f0f0f0;
+  margin-top: 11px;
+  margin-bottom: 60px;
+  overflow-y: scroll;
+}
+
+.check-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.check-buttons > button:last-child {
+  margin-left: 16px;
+}
+
+/* -------------------------------------------------------------- */
+.Signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Signup > div {
+  width: 660px;
+}
+
+.signup-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.signup-input {
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #dfdfdf;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  line-height: 56px;
+}
+.signup-dropdown {
+  color: #a5a5a5;
+}
+
+/* .signup-container:has(.invalid-input) > .signup-dropdown {
+  border: #e43640 2px solid;
+} */
+.signup-input img {
+  padding: 25px;
+}
+
+.signup-hh {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup-half {
+  width: 46%;
+}
+
+.invalid-input {
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 10px;
+  color: #e43640;
+}
+.check-input {
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 10px;
+  /* color: #e43640; */
+}
+.check-input.impossible {
+  color: #e43640;
+}
+.chk-dup {
+  width: 686px;
+}
+
+.chk-dup > .signup-input {
+  width: 80%;
+}
+
+.chk-dup > button {
+  float: right;
+  /* position: absolute; */
+  width: 100px;
+  padding: 0px;
+  height: 56px;
+  margin-top: 12px;
+  margin-left: 8px;
+}
+
+.img_error {
+  width: 14px;
+  height: 16px;
+  position: relative;
+  margin-top: -78px;
+  float: right;
+}
+.chk-dup > .img_error {
+  margin-right: 140px;
+}
+
+.signup-container:has(.invalid-input) > input {
+  height: 55px;
+  color: #e43640;
+  border: 2px solid #e43640;
+}
+
+.chk-dup > button {
+  pointer-events: none;
+}
+
+.chk-dup:not(:has(.img_error))
+  > .signup-input:not(:placeholder-shown)
+  + button {
+  background-color: #e43640;
+  pointer-events: all;
+}
+
+.chk-dup:not(:has(.impossible)):has(.check-input)
+  > .signup-input:not(:placeholder-shown)
+  + button {
+  background-color: #a5a5a5;
+  pointer-events: none;
+}
+
+.recaptcha {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 68px;
+}
+
+/* 드롭다운 */
+
+.signup-input > .dropdown-list {
+  /* 드롭다운 리스트 */
+  width: 325px;
+  margin-top: 10px;
+  color: #1f1f1f;
+}
+
+.marginleftSU {
+  margin-left: 40px;
+}

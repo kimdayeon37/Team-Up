@@ -1,0 +1,111 @@
+.header {
+  /* 로고,사용자 */
+
+  overflow: visible;
+  height: 30px;
+  margin-top: 50px;
+  margin-bottom: 65px;
+  bottom: 0px;
+}
+
+.header-logo {
+  /* 로고div */
+  width: 182px;
+  float: left;
+}
+
+.header-logo > a {
+  /* link를 a로 인식 */
+  width: inherit;
+}
+
+.img_logo {
+  /* 로고이미지 */
+  width: inherit;
+}
+
+.header-wrap {
+  /* 프로필,알람,달력 */
+
+  float: right;
+  line-height: 30px;
+}
+.header-wrap > a:first-of-type,
+.header-wrap > a:last-of-type {
+  cursor: pointer;
+}
+.header-wrap > a:not(:first-of-type):not(:last-of-type) {
+  margin: 0px 12px;
+}
+
+.header-wrap > div {
+  cursor: pointer;
+}
+
+.header-wrap > div:not(:last-of-type) img {
+  /* 우측상단 이미지 크기 */
+  height: 20px;
+}
+.img_calendar {
+  height: 20px;
+  margin-left: 15px;
+}
+
+.img_close {
+  width: 34px;
+  height: 34px !important;
+  margin-left: 10px;
+  /* margin-top: -7px; */
+  cursor: pointer;
+}
+
+.header-profile {
+  /* left해야 순서대로 */
+  float: left;
+  display: flex;
+  flex-direction: column;
+  width: 85px;
+}
+
+.header-profile-none {
+  /* 이름 수직정렬 */
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.header-profile-none a {
+  margin-left: 2px;
+}
+
+.img_profile {
+  /* 프로필이미지 */
+  margin-right: 5px;
+}
+
+.header-profile-name {
+  /* 이름 */
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.header-alarm {
+  /* 알람 */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 20px;
+  height: 30px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.header-calendar {
+  /* 캘린더 */
+  display: flex;
+  align-items: center;
+  height: 30px;
+
+  float: right;
+  width: 34px;
+}

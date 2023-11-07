@@ -1,0 +1,53 @@
+
+INSERT INTO category_TBL VALUES(NULL, '팀플', NULL, 0);
+INSERT INTO category_TBL VALUES(NULL, '스터디', NULL, 1);
+INSERT INTO category_TBL VALUES(NULL, '대회|공모전', NULL, 2);
+
+
+
+INSERT INTO category_TBL VALUES(NULL, '소프트웨어', 1, 0);
+INSERT INTO category_TBL VALUES(NULL, '경영', 1, 1);
+INSERT INTO category_TBL VALUES(NULL, '전자|정보', 1, 2);
+INSERT INTO category_TBL VALUES(NULL, '자연과학', 1, 2);
+
+
+INSERT INTO category_TBL VALUES(NULL, 'IT|개발', 2, 0);
+INSERT INTO category_TBL VALUES(NULL, '실험', 2, 1);
+INSERT INTO category_TBL VALUES(NULL, '인문학', 2, 2);
+INSERT INTO category_TBL VALUES(NULL, '예체능', 2, 2);
+
+INSERT INTO category_TBL VALUES(NULL, '빅데이터', 3, 0);
+INSERT INTO category_TBL VALUES(NULL, '개발', 3, 1);
+INSERT INTO category_TBL VALUES(NULL, '광고', 3, 2);
+INSERT INTO category_TBL VALUES(NULL, '마케팅', 3, 2);
+
+
+INSERT INTO head_TBL VALUES(NULL, '[모집중]',4);
+INSERT INTO head_TBL VALUES(NULL, '[모집완료]',4);
+INSERT INTO head_TBL VALUES(NULL, '[모집중]',5);
+INSERT INTO head_TBL VALUES(NULL, '[모집완료]',5);
+INSERT INTO head_TBL VALUES(NULL, '[모집중]',6);
+INSERT INTO head_TBL VALUES(NULL, '[모집완료]',6);
+INSERT INTO head_TBL VALUES(NULL, '[모집중]',7);
+INSERT INTO head_TBL VALUES(NULL, '[모집완료]',7);
+INSERT INTO head_TBL VALUES(NULL, '[모집중]',8);
+INSERT INTO head_TBL VALUES(NULL, '[모집완료]',8);
+INSERT INTO head_TBL VALUES(NULL, '[모집중]',9);
+INSERT INTO head_TBL VALUES(NULL, '[모집완료]',9);
+INSERT INTO head_TBL VALUES(NULL, '[모집중]',10);
+INSERT INTO head_TBL VALUES(NULL, '[모집완료]',10);
+INSERT INTO head_TBL VALUES(NULL, '[모집중]',11);
+INSERT INTO head_TBL VALUES(NULL, '[모집완료]',11);
+INSERT INTO head_TBL VALUES(NULL, '[모집중]',12);
+INSERT INTO head_TBL VALUES(NULL, '[모집완료]',12);
+INSERT INTO head_TBL VALUES(NULL, '[모집중]',13);
+INSERT INTO head_TBL VALUES(NULL, '[모집완료]',13);
+INSERT INTO head_TBL VALUES(NULL, '[모집중]',14);
+INSERT INTO head_TBL VALUES(NULL, '[모집완료]',14);
+INSERT INTO head_TBL VALUES(NULL, '[모집중]',15);
+INSERT INTO head_TBL VALUES(NULL, '[모집완료]',15);
+
+
+
+
+

@@ -1,0 +1,205 @@
+.board {
+  /* 게시판 상단부분  */
+  margin-top: 68px;
+  margin-bottom: 20px;
+}
+.board-top > a {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.board-flex {
+  /* 양끝으로 하기위한 부모 */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.board-flex > .middle-margin {
+  /* flex에서 양 끝으로 (오른쪽거에) */
+  margin-left: auto;
+}
+
+.board-top {
+  /* 글쓰기, 저장버튼들 */
+}
+
+.board-top-btn {
+  /* 임시저장 취소 등록 */
+}
+.board-top-btn:not(:first-of-type) {
+  margin-left: 8px;
+}
+.board-top-btn:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.board-mid {
+  /* 말머리 */
+  overflow: hidden;
+}
+
+.board-mid > .board-mid-category {
+  /* 말머리 */
+  width: 320px;
+  float: left;
+}
+
+.dropdown {
+  /* 드롭다운 */
+  width: inherit;
+  height: 38px;
+  line-height: 38px;
+  border: 1px #dfdfdf solid;
+  border-radius: 8px;
+  font-size: 16px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.dropdown-list {
+  /* 드롭다운 리스트 */
+  width: inherit;
+  height: auto;
+  position: absolute;
+  border: 1px #dfdfdf solid;
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin-left: -21px;
+  margin-top: 17px;
+  z-index: 999; /*Quill보다 위로가게*/
+}
+.dropdown-list > ul {
+  border: none;
+  -webkit-padding-start: 0px;
+  margin: -1px;
+}
+
+.dropdown-list > ul > li {
+  list-style: none;
+  height: 36px;
+  line-height: 36px;
+  padding-left: 20px;
+}
+.dropdown-list > ul > li:hover {
+  background-color: rgba(223, 223, 223, 0.4);
+}
+.dropdown-list > ul > li:first-of-type:hover {
+  /* border-radius: 8px 0px; */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.dropdown-list > ul > li:last-of-type:hover {
+  /* border-radius: 8px 0px; */
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.btn-thumbnail {
+  /* width: 126px; */
+  height: 38px;
+  font-size: 16px;
+  color: #1f1f1f;
+  background-color: #ffffff;
+  border: 1px solid #dfdfdf;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+.thumbnail-text {
+  margin-left: 20px;
+}
+
+.board-bottom {
+  /* 제목, 중요글등록 */
+  display: block;
+  margin-top: 18px;
+  overflow: hidden;
+}
+
+.board-bottom > .board-title {
+  /* 제목 칸 */
+  width: 624px;
+  float: left;
+}
+.board-bottom > .board-title > .board-title-input {
+  width: 100%;
+  height: 36px;
+  border: 1px #dfdfdf solid;
+  border-radius: 8px;
+  padding: 0px 0px 0px 18px;
+  font-size: 16px;
+}
+
+.board-bottom > .board-important {
+  display: flex;
+  float: left;
+  margin-left: 56px;
+  line-height: 38px;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+#chk_imp + label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #a5a5a5;
+}
+
+.img_checkred {
+  display: none;
+  width: 12.5px;
+  height: 8.5px;
+  line-height: 20px;
+}
+
+#chk_imp:checked + label > .img_checkred {
+  display: block;
+  /* position: relative; */
+}
+
+.board-bottom > .board-important > a {
+  margin-left: 15px;
+}
+.ql-formats {
+  /* Quill이 위로 가는거 방지 */
+  z-index: -999 !important;
+}
+
+.img_dropdown {
+  width: 14px;
+  height: auto;
+  float: right;
+  padding: 15px;
+}
+
+.img_check {
+  display: none;
+}
+
+li:hover .img_check {
+  display: block;
+  width: 14px;
+  height: auto;
+  float: right;
+  padding: 15px;
+}
+
+.editor {
+  margin-top: 17px;
+  margin-bottom: 200px;
+}
+.editor .ql-container {
+  height: 571px !important;
+}
+
+/* 비디오 */
+.ql-editing {
+  left: 180px !important;
+  top: 0px !important;
+}

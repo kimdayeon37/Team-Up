@@ -1,0 +1,70 @@
+.draft {
+  width: 400px;
+  /* height: 240px; */
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 20px;
+  color: #1f1f1f;
+  cursor: auto;
+  padding: 29px;
+  left: 640px;
+  margin-top: 17px;
+  z-index: 2;
+
+  text-align: left;
+}
+
+.draft-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.draft-head {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.draft-list {
+  margin-top: 27px;
+}
+.draft-list > hr {
+  margin: 9px 0px;
+}
+.draft-list-head > a {
+  font-size: 16px;
+  color: #b5b5b5;
+}
+.draft-list-head > .draft-count {
+  color: #e43640;
+}
+.draft-list-head > .draft-deleteall {
+  float: right;
+  margin-right: 8px;
+}
+
+.draft-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.draft-content:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.draft-title {
+  width: 112px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.draft-content > a {
+  font-size: 14px;
+}
+.draft-date {
+  margin-left: -80px;
+}
+.draft-delete {
+  color: #b5b5b5;
+  margin-right: 10px;
+}

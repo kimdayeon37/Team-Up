@@ -1,0 +1,76 @@
+.mypage-header {
+  display: flex;
+  justify-content: center;
+}
+.mypage-profile {
+  display: flex;
+  justify-content: space-between;
+  width: 820px;
+  height: 110px;
+  border-radius: 20px;
+  padding: 40px 28px;
+}
+
+.mypage-profile .img_profile {
+  width: 52px;
+}
+
+.profile-left-top {
+  display: flex;
+  align-items: center;
+}
+.profile-left-top > div > a:first-of-type {
+  margin-left: 14px;
+  font-size: 36px;
+  font-weight: 700;
+}
+.profile-left-top > div > a:last-of-type {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.profile-left-bottom > a {
+  font-size: 20px;
+}
+
+.profile-left-bottom {
+  margin-left: 70px;
+  margin-top: 22px;
+}
+.profile-left-bottom > a:nth-of-type(2n) {
+  margin: 0px 16px;
+  color: #dfdfdf;
+}
+.profile-left-bottom > button {
+  margin-left: 26px;
+  border-radius: 100px;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.profile-right {
+  font-size: 16px;
+  color: #a5a5a5;
+}
+
+.mypage-header ~ .forum-search {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+.mypage-header ~ .forum-search > a {
+  font-size: 24px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.mypage-header ~ .forum-search > a.checked {
+  font-weight: 700;
+  color: #e43640;
+}
+
+.mypage .forum-bottom,
+.mypage .forum-bottom a {
+  display: none;
+  pointer-events: none;
+}

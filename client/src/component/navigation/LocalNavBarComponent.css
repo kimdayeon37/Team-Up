@@ -1,0 +1,45 @@
+.lnb {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.gnb-item {
+  /* 대분류 */
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.lnb-items {
+  margin-top: 30px;
+  display: flex;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  width: 80%;
+}
+
+.lnb-items > .item-checked > a {
+  color: #e43640;
+  font-weight: 700;
+}
+.lnb-items > .item-checked > .underline {
+  height: 2px;
+  background-color: #e43640;
+  border-radius: 100px;
+  border: none;
+  margin-top: 10px;
+}
+.lnb-items > li {
+  list-style: none;
+}
+.lnb-items > li:not(:first-of-type) {
+  margin-left: 36px;
+}
+
+.lnb-items > li > a {
+  text-decoration-line: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #a5a5a5;
+}

@@ -1,0 +1,73 @@
+.alarm {
+  width: 402px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 28px 40px;
+  cursor: auto;
+  top: 100px;
+}
+
+.alarm-head {
+  font-size: 24px;
+  font-weight: 700;
+}
+.alarm-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  color: #b5b5b5;
+  font-weight: 500;
+}
+.alarm-header > div > a:not(:last-of-type):not(:first-of-type) {
+  color: #e43640;
+}
+.alarm-header > a {
+  font-size: 14px;
+}
+.alarm > hr {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  opacity: 0.4;
+}
+
+.alarm-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.alarm-content {
+  display: flex;
+  justify-content: space-between;
+}
+.alarm-content > div {
+  width: 260px;
+}
+.alarm-content > div > p:last-of-type {
+  margin-top: -5px;
+}
+.alarm-list .link:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.alarm-why {
+  font-weight: 600;
+  color: #1f1f1f;
+}
+.alarm-title {
+  font-size: 12px;
+  color: #828282;
+}
+
+.alarm-where {
+  margin-right: 0px;
+  color: #828282;
+}
+
+.header-alarm > .img_close {
+  margin-right: -8px;
+}
+
+.alarm-readall {
+  cursor: pointer;
+}

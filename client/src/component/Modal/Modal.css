@@ -1,0 +1,86 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  font-size: 18px;
+}
+
+.modal.openModal {
+  display: flex;
+  align-items: center;
+  /* 팝업이 열릴때 스르륵 열리는 효과 */
+  animation: modal-bg-show 0.3s;
+}
+@keyframes modal-show {
+  from {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+@keyframes modal-bg-show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal > section {
+  /* 모달 창 스타일  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 460px;
+  height: 236px;
+  margin: 0 auto;
+  border-radius: 14px;
+  background-color: #ffffff;
+  /* 팝업이 열릴때 스르륵 열리는 효과 */
+  animation: modal-show 0.3s;
+  overflow: hidden;
+}
+
+.modal > section > main {
+  /* 텍스트 부분 스타일 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 300px;
+  height: 100px;
+  line-height: 100px;
+  margin-top: 41px;
+
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.modal > section > footer {
+  margin-top: 14px;
+}
+
+.modal > section > footer > button {
+  width: 160px;
+  height: 40px;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.modal > section > footer button.no {
+  background-color: #dfdfdf;
+}
+.modal > section > footer button.yes {
+  margin-left: 10px;
+  background-color: #e43640;
+}

@@ -1,0 +1,248 @@
+.forum {
+  margin-top: 60px;
+}
+
+.forum-dp {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.img_dp {
+  width: 1124px;
+}
+
+.forum-search {
+  margin-bottom: 60px;
+}
+.forum-search > div {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  width: 281px;
+  height: 36px;
+  border-radius: 50px;
+  padding-left: 20px;
+  background-color: #ffffff;
+}
+
+.forum-search input {
+  width: inherit;
+  height: inherit;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.forum-search img {
+  margin-left: auto;
+  width: 18px;
+  height: 20px;
+  padding: 10px 20px;
+}
+
+.forum-main {
+  overflow: visible; /* 그림자 안잘리게*/
+  /* margin-top: 60px; */
+}
+.forum-main .forum-top {
+  display: flex;
+}
+
+.forum-main .forum-top a {
+  font-size: 20px;
+  color: #a5a5a5;
+}
+
+.top-num {
+  margin-left: 21px;
+  width: 372px;
+}
+.top-title {
+  width: 332px;
+}
+.top-name {
+  width: 195px;
+}
+.top-view {
+  width: 104px;
+}
+.top-date {
+  width: 97px;
+}
+
+.forum-main hr {
+  margin-top: 15px;
+}
+
+.forum-list {
+}
+.forum-list > .list-container {
+  font-size: 18px;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 16px;
+  border-radius: 50px;
+  border: none;
+}
+.forum-list > .list-container > a {
+  display: flex;
+  text-align: center;
+  text-decoration-line: none;
+  color: #1f1f1f;
+}
+
+.forum-list > .now_post {
+  background-color: #e43640;
+}
+.forum-list > .now_post > a {
+  color: #ffffff;
+}
+.forum-list > .now_post > a > .forum-important > .img_star {
+  display: none;
+}
+.forum-list > .now_post > a > .forum-important > .img_starwhite {
+  display: block;
+}
+
+.forum-list > .list-container:hover {
+  background-color: #e43640;
+}
+.forum-list > .list-container:hover > a {
+  color: #ffffff;
+}
+.forum-list > .list-container:hover > a > .forum-important > .img_star {
+  display: none;
+}
+.forum-list > .list-container:hover > a > .forum-important > .img_starwhite {
+  display: block;
+}
+
+.forum-list > .list-container > a > .forum-important {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.forum-important > img {
+  width: 23.33px;
+  height: 22.17px;
+  line-height: 30px;
+}
+.forum-important > .img_starwhite {
+  display: none;
+}
+
+.forum-list > .list-container > a > .forum-num {
+  width: 80px;
+}
+.forum-list > .list-container > a > .forum-title {
+  width: 485px;
+  text-align: left;
+  padding-left: 20px;
+  margin-right: 110px;
+}
+.forum-list > .list-container > a > .forum-name {
+  display: flex;
+  align-items: center;
+  width: 205px;
+}
+.forum-list > .list-container > a > .forum-name > img {
+  margin-right: 5px;
+  width: 20px;
+}
+.forum-list > .list-container > a > .forum-view {
+  width: 71px;
+}
+.forum-list > .list-container > a > .forum-date {
+  width: 153px;
+}
+
+.forum-bottom {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.forum-bottom .btn-write {
+  float: right;
+}
+
+.no_data {
+  text-align: center;
+  margin: 200px;
+  font-size: 20px;
+}
+
+/* -------------------- */
+.forum-grid {
+  display: grid;
+  grid-template-columns: 386px 386px 386px;
+  justify-content: center;
+}
+
+.forum-grid:has(.no_data) {
+  display: block;
+}
+
+.grid-container {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  /* padding: 20px; */
+  border-radius: 20px;
+  height: 346px;
+}
+
+.grid-container:nth-last-child(-n + 3) {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.grid-container img {
+  display: block;
+  width: 100%;
+  height: 251px;
+
+  border-radius: 20px 20px 0px 0px;
+}
+
+.grid-container > a {
+  text-decoration-line: none;
+}
+.grid-container > a > .grid-star {
+  position: absolute;
+  font-size: 28px;
+  margin-top: 16px;
+  margin-left: 16px;
+  color: #e43640;
+}
+
+.grid-container > a > .grid-contents {
+  height: 55px;
+  border-radius: 0px 0px 20px 20px;
+  padding: 19px 18px 21px 25px;
+}
+
+.grid-contents > .forum-title {
+  margin-top: 0px;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #1f1f1f;
+  width: 303px;
+}
+
+.grid-contents > a {
+  color: #757272;
+  display: block;
+  float: left;
+}
+.grid-contents > .forum-name {
+  font-size: 16px;
+  width: 116px;
+}
+.grid-contents > .forum-date {
+  font-size: 14px;
+  font-weight: 400;
+}

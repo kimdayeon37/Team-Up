@@ -1,0 +1,111 @@
+.footer {
+  width: 100%;
+  height: 280px;
+  background-color: #f6f6f6;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.footer > div {
+  margin-bottom: 30px;
+}
+.footer > .footer-useuser-open {
+  width: 460px;
+  height: 162px;
+  background-color: #ffffff;
+  position: absolute;
+  transform: translate(0%, -102%);
+  border-radius: 20px 20px 0px 0px;
+  text-align: left;
+  z-index: 1;
+}
+.footer > .footer-useuser-open > ul {
+  height: 140px;
+  list-style: none;
+  padding: 0px;
+  overflow-y: scroll;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-clip: padding-box;
+  border: 12px solid transparent;
+  z-index: 1;
+}
+.footer > .footer-useuser-open > ul::-webkit-scrollbar {
+  width: 15px;
+}
+.footer > .footer-useuser-open > ul::-webkit-scrollbar-thumb {
+  background-color: #e43640;
+  border-radius: 25px;
+}
+
+.footer > .footer-useuser-open > ul > li {
+  display: flex;
+  align-items: center;
+  height: 16px;
+  line-height: 16px;
+  padding-left: 19px;
+  font-size: 12px;
+  margin-bottom: 12px;
+  color: #a5a5a5;
+}
+.footer > .footer-useuser-open > ul > li > img {
+  height: 16px;
+  margin-right: 7px;
+}
+.footer > .footer-useuser-open > hr {
+  width: 420px;
+  margin-top: -5px;
+}
+
+.footer > .footer-useuser {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  width: 460px;
+  height: 44px;
+  line-height: 44px;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 45px;
+  z-index: 1;
+}
+
+.footer-useuser > a {
+  margin-left: 20px;
+}
+.footer-useuser > .footer-name {
+  display: flex;
+  align-items: center;
+}
+.footer-useuser > .footer-name > img {
+  width: 20px;
+  filter: opacity(0.1) drop-shadow(0 0 0 #a5a5a5);
+}
+.footer-useuser > .footer-name > a {
+  margin-left: 10px;
+  color: #a5a5a5;
+}
+.footer-useuser > button {
+  margin-left: 20px;
+  background-color: #e43640;
+  color: #ffffff;
+  border-radius: 100px;
+  padding: 6px 12px;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.footer-email {
+  font-size: 16px;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  color: #a5a5a5;
+}

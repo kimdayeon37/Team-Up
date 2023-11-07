@@ -1,0 +1,174 @@
+CREATE DATABASE TEAMUP;
+
+USE TEAMUP;
+
+CREATE TABLE user_TBL
+(user_no INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+user_class INT NOT NULL DEFAULT 0, 
+user_name VARCHAR(10) NOT NULL, 
+user_nick VARCHAR(45) NOT NULL, 
+user_sign_in_date DATETIME NOT NULL, 
+user_id VARCHAR(20) NOT NULL, 
+user_password VARCHAR(200) NOT NULL,
+user_password2 VARCHAR(200) NOT NULL,
+user_department VARCHAR(45) NOT NULL, 
+user_department_number VARCHAR(45) NOT NULL, 
+user_leave_date DATETIME NULL, 
+user_isdeleted TINYINT(1) NOT NULL DEFAULT 0,
+user_info VARCHAR(200) NULL,
+eval1 INT NOT NULL DEFAULT 0,
+eval2 INT NOT NULL DEFAULT 0,
+eval3 INT NOT NULL DEFAULT 0,
+eval4 INT NOT NULL DEFAULT 0,
+eval5 INT NOT NULL DEFAULT 0
+);
+
+
+
+CREATE TABLE category_TBL
+(cat_no INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+cat_name VARCHAR(20) NOT NULL, 
+cat_parent_no INT NULL, 
+cat_order INT NOT NULL
+);
+
+ALTER TABLE category_TBL
+ADD CONSTRAINT FK_category_TBL_cat_parent_no_category_TBL_cat_no FOREIGN KEY (cat_parent_no)
+REFERENCES category_TBL (cat_no) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+
+
+CREATE TABLE head_TBL
+(head_no INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+head_name VARCHAR(45) NOT NULL,
+cat_no INT NOT NULL
+);
+
+ALTER TABLE head_TBL
+ADD CONSTRAINT FK_head_TBL_cat_no_category_TBL_cat_no FOREIGN KEY (cat_no)
+REFERENCES category_TBL (cat_no) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+
+CREATE TABLE post_TBL
+(post_no INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+user_no INT NOT NULL, 
+cat_no INT NOT NULL,
+head_no INT NOT NULL, 
+post_title VARCHAR(50) NOT NULL,
+post_thumb1 VARCHAR(100) NULL,
+post_thumb2 VARCHAR(100) NULL,
+post_content VARCHAR(2000) NOT NULL, 
+post_hit INT NOT NULL DEFAULT 0, 
+post_status INT NOT NULL, 
+post_is_important TINYINT(1) NOT NULL DEFAULT 0, 
+post_ins_date DATETIME NOT NULL, 
+post_upd_date DATETIME NULL
+);
+
+ALTER TABLE post_TBL
+ADD CONSTRAINT FK_post_TBL_cat_no_category_TBL_cat_no FOREIGN KEY (cat_no)
+REFERENCES category_TBL (cat_no) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+ALTER TABLE post_TBL
+ADD CONSTRAINT FK_post_TBL_user_no_user_TBL_user_no FOREIGN KEY (user_no)
+REFERENCES user_TBL (user_no) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+ALTER TABLE post_TBL
+ADD CONSTRAINT FK_post_TBL_head_no_head_TBL_head_no FOREIGN KEY (head_no)
+REFERENCES head_TBL (head_no) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+
+
+CREATE TABLE notice_TBL
+(noti_no INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+user_no_to INT NOT NULL,
+user_no_from INT NOT NULL, 
+post_no INT NOT NULL,
+noti_type TINYINT(1) NOT NULL,
+noti_created_at DATETIME NOT NULL, 
+noti_read_at DATETIME NULL DEFAULT NULL 
+);
+
+ALTER TABLE notice_TBL
+ADD CONSTRAINT FK_notice_TBL_user_no_to_user_TBL_user_no FOREIGN KEY (user_no_to)
+REFERENCES user_TBL (user_no) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+ALTER TABLE notice_TBL
+ADD CONSTRAINT FK_notice_TBL_user_no_from_user_TBL_user_no FOREIGN KEY (user_no_from)
+REFERENCES user_TBL (user_no) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+ALTER TABLE notice_TBL
+ADD CONSTRAINT FK_notice_TBL_post_no_post_TBL_post_no FOREIGN KEY (post_no)
+REFERENCES post_TBL (post_no) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+
+CREATE TABLE comment_TBL
+(comment_no INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+post_no INT NOT NULL, 
+user_no INT NOT NULL, 
+comment_ins_date DATETIME NOT NULL, 
+comment_upd_date DATETIME NULL, 
+comment_parent_no INT NULL, 
+comment_content VARCHAR(1000) NOT NULL,
+comment_isdeleted TINYINT(1) NOT NULL DEFAULT 0
+);
+
+ALTER TABLE comment_TBL
+ADD CONSTRAINT FK_comment_TBL_user_no_user_TBL_user_no FOREIGN KEY (user_no)
+REFERENCES user_TBL (user_no) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+ALTER TABLE comment_TBL
+ADD CONSTRAINT FK_comment_TBL_post_no_post_TBL_post_no FOREIGN KEY (post_no)
+REFERENCES post_TBL (post_no) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+ALTER TABLE comment_TBL
+ADD CONSTRAINT FK_comment_TBL_comment_parent_no_comment_TBL_comment_no FOREIGN KEY (comment_parent_no)
+REFERENCES comment_TBL (comment_no) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+
+CREATE TABLE like_TBL
+(like_no INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+post_no INT NOT NULL, 
+user_no INT NOT NULL
+);
+
+ALTER TABLE like_TBL
+ADD CONSTRAINT FK_like_TBL_post_no_post_TBL_post_no FOREIGN KEY (post_no)
+REFERENCES post_TBL (post_no) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+ALTER TABLE like_TBL
+ADD CONSTRAINT FK_like_TBL_post_no_user_TBL_user_no FOREIGN KEY (user_no)
+REFERENCES user_TBL (user_no) ON DELETE RESTRICT ON UPDATE RESTRICT;
+
+CREATE TABLE team_TBL
+(team_no INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+user_no INT NOT NULL,
+team_name VARCHAR(45) NOT NULL,
+team_start_date DATETIME NOT NULL,
+team_status TINYINT(1) NOT NULL DEFAULT 0
+);
+
+ALTER TABLE team_TBL
+ADD CONSTRAINT UserNo
+FOREIGN KEY (user_no)
+REFERENCES user_TBL (user_no);
+
+CREATE TABLE team_user_TBL
+(team_no INT NOT NULL,
+user_no INT NOT NULL,
+team_leader TINYINT(1) NOT NULL
+);
+
+ALTER TABLE team_user_TBL
+ADD PRIMARY KEY(team_no,user_no);
+
+
+ALTER TABLE team_user_TBL
+ADD CONSTRAINT TeamNo
+FOREIGN KEY (team_no)
+REFERENCES team_TBL (team_no);
+
+ALTER TABLE team_user_TBL
+ADD CONSTRAINT UserNoteam
+FOREIGN KEY (user_no)
+REFERENCES user_TBL (user_no);
