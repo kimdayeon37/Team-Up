@@ -3,8 +3,7 @@
 # 웹서비스 설계 및 구현 Web Project
 
 ## 기술 스택
-
-react, nodejs, mysql
+<img src="https://img.shields.io/badge/react-61DAFB?style=flat-square&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/nodejs-339933?style=flat-square&logo=nodejs&logoColor=white"/> <img src="https://img.shields.io/badge/mysql-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
 
 
 [웹설구_중간보고서.pdf](https://github.com/kimdayeon37/Team-Up/files/13277653/_.pdf)
