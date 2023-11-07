@@ -1,5 +1,3 @@
-![image](https://github.com/kimdayeon37/Team-Up/assets/93921784/284e75b4-fd7d-4629-a35b-899a3310e0b4)# Team-Up
-
 # 🙌 웹 서비스 설계 및 구현 Web Project
 학교 프로젝트 진행 중에 있어서 팀원을 구하기 어렵다는 문제점 도출
 -> 본인이 원하는 조건에 맞는 팀원을 구할 수 있는 팀원 구인 웹 서비스 개발 🧑‍🤝‍🧑
