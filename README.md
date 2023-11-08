@@ -13,6 +13,7 @@
 
 ## ⚡ 기술 스택
 <img src="https://img.shields.io/badge/react-61DAFB?style=flat-square&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/nodejs-339933?style=flat-square&logo=nodejs&logoColor=white"/> <img src="https://img.shields.io/badge/mysql-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
+
 프로젝트 기간 [2022.10.1~2022.12.15]
 
 <br/>
